@@ -1,0 +1,39 @@
+body{
+	background:white;
+	letter-spacing:1px;
+	font-family:Helvetica;
+	padding:10px;}
+	
+.year{	color:green; font-size:85px;}
+.relative{	position:relative;}
+
+.month{	margin-top:12px;}
+.months ul{	list-style:none;	margin:0px;	padding:0px;}
+.months ul li a{	float:left; margin:-1px; padding:0px 15px 0px 0px; color:#888888; text-decoration: family; font-size:2.5em;}
+.months ul li a:hover, .months ul li a.active{	color:green;}
+table{	border-collapse:collapse;}
+table td{	border:1px solid #888888; width:80px;	height:80px;}
+table td.today{	border:2px solid green; width:80px;	height:80px;}
+table td.padding{	border:none;}
+table td:hover{	background:green; cursor:pointer;} /* lien ac les events ?*/
+table th{	font-weight:normal; color:#A8A8A8;}
+table td .day{	position:absolute;	color:#8C8C8C;	bottom:-40px;	right:5px;	font-weight:bold;}
+table td .events{	position:relative;	width:79px;	height:0px;	margin:-39px 0px 0px;	padding:20px 20px 20px 20px;}
+table td .events li{	width:10px;	height:10px; float:left; background:#888888;  border-radius : 5px 5px 5px 5px; font-size:0em;} /* les events en point dans les cases "jour"*/ 
+table td:hover .events{	position:absolute; left:582px; font-size:2em; top:66px; width:442px; list-style: disc;}
+table td:hover .events li{	height:40px; line-height:40px; font-size:0.5em; font-weight:bold;  float:right; color: green; width: 150px; background:none;} /*  ici on devrait afficher les events sur le cot� */
+table td:hover .events li:first-child{	border-top:2px solid #D6D6D6;}
+table td .daytitle{ display:none;}
+
+table td:hover .daytitle {
+    float: right;
+    display: block;
+    position: absolute;
+    left: 582px; /* Limite la position horizontale gauche à 582 pixels */
+    top: 0px;
+    width: 442px;
+    font-size: 1.5em;
+}
+
+
+.clear{	clear:both;}
